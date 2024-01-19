@@ -1,0 +1,15 @@
+<html>
+<body>
+        <h1> Python Chatbot </h1>
+        <form action="/ask" method="post">
+            <input type="text" name="user_question">
+            <input type="submit" name="submit">
+        </form>
+  {% if user_question %}
+        <h3>Your Question:</h3>
+        <p>{{ user_question }}</p>
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+        {% endif %}
+</body>
+</html>
